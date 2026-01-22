@@ -49,7 +49,6 @@ if (form) {
     });
 }
 
-
 // التعامل مع زر صعود الشاشة والتحكم باظهاره واخفاءه
 window.onscroll = function () {
     if (window.scrollY >= 180) {
