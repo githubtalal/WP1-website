@@ -78,6 +78,8 @@ if (eventCategory) {
         document.querySelectorAll('.category').forEach(category => {
             if (selectedCategory === 'all') {
                 category.classList.remove('d-none')
+                category.classList.remove('hidden-location-event')
+                category.classList.remove('hidden-date-event')
             } else {
                 if (category.classList.contains(`category-${selectedCategory}`))
                     category.classList.remove('d-none')
@@ -95,6 +97,8 @@ if (eventLocation) {
         document.querySelectorAll('.location').forEach(location => {
             if (selectedLocation === 'all') {
                 location.classList.remove('d-none')
+                location.classList.remove('hidden-location-event')
+                location.classList.remove('hidden-date-event')
             } else {
                 if (location.classList.contains(`location-${selectedLocation}`) && !location.classList.contains('hidden-date-event')) {
                     location.classList.remove('d-none')
