@@ -102,7 +102,6 @@ if (eventLocation) {
                 if (location.classList.contains(`location-${selectedLocation}`) && !location.classList.contains('hidden-date-event')) {
                     location.classList.remove('d-none')
                     location.classList.remove('hidden-location-event')
-                    location.classList.remove('hidden-date-event')
                 }
                 else {
                     location.classList.add('d-none')
@@ -114,6 +113,7 @@ if (eventLocation) {
     })
 }
 
+
 eventDate = document.getElementById('event-date')
 if (eventDate) {
     eventDate.addEventListener('change', function (e) {
@@ -122,7 +122,6 @@ if (eventDate) {
             if (eventDate.classList.contains(`date-${selectedDate}`) && !eventDate.classList.contains('hidden-location-event')) {
                 eventDate.classList.remove('d-none')
                 eventDate.classList.remove('hidden-date-event')
-                location.classList.remove('hidden-location-event')
             }
             else {
                 eventDate.classList.add('d-none')
